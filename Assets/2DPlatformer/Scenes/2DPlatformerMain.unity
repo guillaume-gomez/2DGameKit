@@ -180,26 +180,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minNormalGroundY: 0.65
   gravityModifier: 1
---- !u!1 &449771631 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1116900248984994, guid: e7fcecc826687024e9b52ec763b14088,
+--- !u!212 &449771636 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 212140962949679826, guid: ddfa7a34b00ff3b41babb12db69b03d4,
     type: 2}
   m_PrefabInternal: {fileID: 596668924}
---- !u!114 &449771632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 449771631}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfea5b99531ffa64c8c08f08de3fa06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minNormalGroundY: 0.65
-  gravityModifier: 1
-  maxSpeed: 7
-  jumpTakeOffSpeed: 7
 --- !u!1001 &596668924
 Prefab:
   m_ObjectHideFlags: 0
@@ -207,44 +192,40 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_LocalPosition.x
       value: -4.14
       objectReference: {fileID: 0}
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_LocalPosition.y
       value: 3.39
       objectReference: {fileID: 0}
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_LocalPosition.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4566797654940672, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+    - target: {fileID: 4536556617968068, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1116900248984994, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e7fcecc826687024e9b52ec763b14088, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: ddfa7a34b00ff3b41babb12db69b03d4, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1153934357
 Prefab:
@@ -2831,7 +2812,7 @@ Prefab:
         type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 449771636}
     - target: {fileID: 114123390247084860, guid: 0f387d2a5577afa47b4f87e4e846f091,
         type: 2}
       propertyPath: limits.Array.data[0].x
@@ -2870,12 +2851,12 @@ Prefab:
     - target: {fileID: 20134372339604138, guid: 0f387d2a5577afa47b4f87e4e846f091,
         type: 2}
       propertyPath: orthographic size
-      value: 3.296875
+      value: 3.9765625
       objectReference: {fileID: 0}
     - target: {fileID: 114123390247084860, guid: 0f387d2a5577afa47b4f87e4e846f091,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1321427843468262, guid: 0f387d2a5577afa47b4f87e4e846f091, type: 2}
       propertyPath: m_IsActive
